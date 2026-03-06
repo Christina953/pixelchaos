@@ -14,7 +14,7 @@
 3. Seadistatud automaatne deploy: iga "push" main harusse uuendab lehte.
 
 ## Probleemid ja lahendused
-* Probleem: 
+* Probleem: Esimesel katsel git push main harusse ei uuendanud lehte. Tegin Manual Deploy. Teisel katsel kõik toimis
 
 ## Deploy testimise tulemus:
 * Veebileht on edukalt üleval Renderi pakutud domeenil.https://pixelchaos.onrender.com/

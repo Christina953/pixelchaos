@@ -1,0 +1,23 @@
+name: Deploy to Zone VPS
+
+on:
+  push:
+    branches:
+      - main  # Veendu, et su peamise haru nimi on 'main'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy to Server
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "."
+          target: "/var/www/pixelchaos"
+          strip_components: 0 # See jätab struktuuri samaks (sh public kaust)
