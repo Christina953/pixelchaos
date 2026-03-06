@@ -9,9 +9,12 @@
 **Serveri info:** Render.com (Static Site), automaatne HTTPS.
 
 ## Tehtud tegevused
-1. Loodud projekti struktuur kaustadega `public/` ja `docs/`[cite: 78, 82, 86].
+1. Loodud projekti struktuur kaustadega `public/` ja `docs/`.
 2. Ühendatud GitHubi repo Render.com teenusega.
 3. Seadistatud automaatne deploy: iga "push" main harusse uuendab lehte.
 
 ## Probleemid ja lahendused
 * Probleem: 
+
+## Deploy testimise tulemus:
+* Veebileht on edukalt üleval Renderi pakutud domeenil.https://pixelchaos.onrender.com/
